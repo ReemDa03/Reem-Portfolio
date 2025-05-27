@@ -1,0 +1,50 @@
+/* src/Pages/Home/Hero.css */
+
+.hero-section {
+  padding: 120px 20px 80px;
+  background: linear-gradient(135deg, #0d0d2b, #1e1e4f);
+  color: white;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+.hero-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.hero-content h1 {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+.hero-content h2 {
+  font-size: 28px;
+  color: #ff4c60;
+  margin-bottom: 20px;
+}
+
+.hero-content .reem-name {
+  color: #ff4c60;
+}
+
+.summary {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 30px;
+  color: #e0e0e0;
+}
+
+.cv-button {
+  display: inline-block;
+  background-color: #ff4c60;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.cv-button:hover {
+  background-color: #e04355;
+}
