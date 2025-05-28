@@ -1,7 +1,10 @@
 import React, { useState, useEffect, useRef } from 'react';
 import './Skills.css';
 import { FaGithub, FaFigma, FaReact } from 'react-icons/fa';
-import { SiFirebase, SiHtml5, SiCss3, SiJavascript, SiRedux, SiTailwindcss, SiCloudinary, SiNetlify } from 'react-icons/si';
+import {
+  SiFirebase, SiCloudinary, SiHtml5, SiCss3, SiJavascript,
+  SiRedux, SiTailwindcss, SiNetlify
+} from 'react-icons/si';
 import { MdDesignServices } from 'react-icons/md';
 import { BiDevices } from 'react-icons/bi';
 
@@ -24,7 +27,6 @@ const Skills = () => {
   const [showAll, setShowAll] = useState(false);
   const [isVisible, setIsVisible] = useState(false);
   const sectionRef = useRef(null);
-  const visibleSkills = showAll ? skillsList : skillsList.slice(0, 4);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -45,8 +47,13 @@ const Skills = () => {
         ref={sectionRef}
         className={`skills-grid ${isVisible ? 'visible' : ''}`}
       >
-        {visibleSkills.map((skill, index) => (
-          <div className="skill-card" key={index}>
+        {(showAll ? skillsList : skillsList.slice(0, 4)).map((skill, index) => (
+          <div
+           className="skill-card" key={index}
+
+            
+            style={{ transitionDelay: `${index * 50}ms` }}
+          >
             <div className="skill-icon">{skill.icon}</div>
             <div className="skill-name">
               {skill.name}

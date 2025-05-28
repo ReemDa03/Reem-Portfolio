@@ -5,6 +5,7 @@
   color: white;
   font-family: 'Poppins', sans-serif;
   overflow-x: hidden;
+  
 }
 
 .projects-title {
@@ -15,7 +16,8 @@
 
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));
+  justify-content: center;
   gap: 30px;
   max-width: 1000px;
   margin: 0 auto;
@@ -27,6 +29,7 @@
 .projects-grid.visible {
   opacity: 1;
   transform: translateY(0);
+  width: 90%;
 }
 
 .project-card {
@@ -39,6 +42,7 @@
   flex-direction: column;
   justify-content: space-between;
   padding-bottom: 20px;
+
 }
 
 .project-card:hover {
@@ -72,13 +76,18 @@
   color: #ff2e45;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1500px) {
   .projects-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media (max-width: 600px) {
+  .projects-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 560px) {
   .projects-grid {
     grid-template-columns: repeat(1, 1fr);
   }

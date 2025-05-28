@@ -12,6 +12,7 @@ const App = () => {
         {/* كل الأقسام بنفس الصفحة */}
         <Route path="/" element={<HomePage />} />
       </Routes>
+      
     </div>
   );
 };

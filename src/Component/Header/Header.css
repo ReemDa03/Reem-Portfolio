@@ -1,27 +1,27 @@
-/* src/Pages/Home/Hero.css */
-
 .hero-section {
-  padding: 120px 20px 80px;
-  background: linear-gradient(135deg, #0d0d2b, #1e1e4f);
+  padding: clamp(4rem, 10vw, 8rem) clamp(1rem, 5vw, 2rem) clamp(3rem, 8vw, 5rem);
+  background:  #0d0d2b;
   color: white;
   text-align: center;
   font-family: 'Poppins', sans-serif;
+  overflow-x: hidden; /* يمنع ظهور مساحة بيضاء يمين */
 }
 
 .hero-content {
   max-width: 800px;
   margin: 0 auto;
+  padding: 0 1rem;
 }
 
 .hero-content h1 {
-  font-size: 48px;
-  margin-bottom: 10px;
+  font-size: clamp(2rem, 6vw, 3rem); /* بين 32px و 48px */
+  margin-bottom: 0.5rem;
 }
 
 .hero-content h2 {
-  font-size: 28px;
-  color: #ff4c60;
-  margin-bottom: 20px;
+  font-size: clamp(1.25rem, 4.5vw, 1.75rem); /* 20px - 28px */
+  color: white;
+  margin-bottom: 1rem;
 }
 
 .hero-content .reem-name {
@@ -29,9 +29,9 @@
 }
 
 .summary {
-  font-size: 18px;
+  font-size: 92%; /* 16px - 18px */
   line-height: 1.6;
-  margin-bottom: 30px;
+  margin-bottom: 2rem;
   color: #e0e0e0;
 }
 
@@ -39,7 +39,8 @@
   display: inline-block;
   background-color: #ff4c60;
   color: white;
-  padding: 12px 24px;
+  padding: clamp(0.5rem, 2vw, 0.75rem) clamp(1rem, 4vw, 1.5rem); /* padding responsive */
+  font-size: clamp(0.9rem, 2.5vw, 1rem);
   border-radius: 8px;
   text-decoration: none;
   transition: background 0.3s;

@@ -40,7 +40,7 @@ const Projects = () => {
 
   return (
     <section className="projects-section" id="projects">
-      <h2 className="projects-title">Featured Projects</h2>
+      <h2 className="projects-title">My Projects</h2>
       <div
         ref={sectionRef}
         className={`projects-grid ${isVisible ? 'visible' : ''}`}
