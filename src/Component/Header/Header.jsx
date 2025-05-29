@@ -19,8 +19,7 @@ const Hero = () => {
           can contribute to meaningful, user-focused projects.
         </p>
         <a
-          href="https://pdfhost.io/v/QuvugdFPfQ_CV_Reem_Aldarwesh
-"
+          href="https://pdfhost.io/v/QuvugdFPfQ_CV_Reem_Aldarwesh"
           className="cv-button"
           target="_blank"
           rel="noopener noreferrer"
