@@ -19,14 +19,13 @@ const Hero = () => {
           can contribute to meaningful, user-focused projects.
         </p>
         <a
-  href="https://drive.google.com/uc?export=preview&id=13BkYCH0XPTqk0mxXLp40I1d3ApD1t5O3"
-  className="cv-button"
-  target="_blank"
-  rel="noopener noreferrer"
->
-  View My CV
-</a>
-
+          href="https://drive.google.com/uc?export=preview&id=13BkYCH0XPTqk0mxXLp40I1d3ApD1t5O3"
+          className="cv-button"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          View My CV
+        </a>
       </div>
     </section>
   );
